@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Note {
+    enum Pitch {
+        PING = 0;
+    }
+    Pitch pitch = 1;
+    bytes body = 2;
+}
